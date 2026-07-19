@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f2ee;
+  color: #1f2933;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  padding: 28px 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  color: #5f6f52;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 8px 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.tagline {
+  font-size: 20px;
+  max-width: 620px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d5d8dc;
+  border-radius: 12px;
+  padding: 12px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: bold;
+  background: #1f2933;
+  color: white;
+  cursor: pointer;
+}
+
+button.secondary {
+  margin-top: 0;
+  background: #e8e4dc;
+  color: #1f2933;
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.output {
+  line-height: 1.55;
+}
+
+.output h3 {
+  margin-top: 22px;
+  margin-bottom: 6px;
+}
+
+.note {
+  font-size: 14px;
+  color: #52606d;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .output-header {
+    display: block;
+  }
+
+  button.secondary {
+    margin-top: 8px;
+  }
+}
