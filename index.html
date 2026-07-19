@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeachReady</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Teacher planning assistant</p>
+      <h1>TeachReady</h1>
+      <p class="tagline">Turn a learning goal into a teachable, checkable lesson in minutes.</p>
+    </section>
+
+    <section class="card">
+      <h2>Plan a lesson</h2>
+
+      <label for="year">Year or stage</label>
+      <input id="year" placeholder="Example: Year 4" />
+
+      <label for="subject">Subject</label>
+      <input id="subject" placeholder="Example: Mathematics" />
+
+      <label for="goal">Learning goal</label>
+      <textarea id="goal" placeholder="What should students learn?"></textarea>
+
+      <label for="length">Lesson length</label>
+      <input id="length" placeholder="Example: 35 minutes" />
+
+      <label for="prior">What students already know</label>
+      <textarea id="prior" placeholder="What knowledge are students bringing?"></textarea>
+
+      <label for="context">Likely challenge or class context</label>
+      <textarea id="context" placeholder="What might students find hard?"></textarea>
+
+      <label for="resources">Resources available</label>
+      <textarea id="resources" placeholder="Example: mini whiteboards, fraction strips, notebooks"></textarea>
+
+      <button id="generateBtn">Generate lesson</button>
+    </section>
+
+    <section class="card output-card">
+      <div class="output-header">
+        <h2>Lesson output</h2>
+        <button id="copyBtn" class="secondary">Copy lesson</button>
+      </div>
+
+      <div id="output" class="output">
+        <p>Your lesson will appear here.</p>
+      </div>
+    </section>
+
+    <p class="note">
+      TeachReady is a planning assistant. Teachers should review and adapt all suggestions using their professional judgement, curriculum requirements, school context and student needs.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
