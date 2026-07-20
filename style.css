@@ -109,7 +109,18 @@ button.secondary {
   color: #52606d;
   padding-bottom: 30px;
 }
+.sample-button {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 12px;
+  background: #e8efe5;
+  color: #243126;
+  border: 1px solid #cbd9c6;
+}
 
+.sample-button:hover {
+  background: #dce8d7;
+}
 @media (max-width: 640px) {
   .container {
     padding: 16px;
