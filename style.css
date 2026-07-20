@@ -121,6 +121,11 @@ button.secondary {
 .sample-button:hover {
   background: #dce8d7;
 }
+.intro {
+  max-width: 680px;
+  line-height: 1.6;
+  color: #52606d;
+}
 @media (max-width: 640px) {
   .container {
     padding: 16px;
