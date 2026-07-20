@@ -143,3 +143,188 @@ button.secondary {
     margin-top: 8px;
   }
 }
+/* Refined visual direction */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background: #f1f1ee;
+  color: #111111;
+  letter-spacing: -0.01em;
+}
+
+.container {
+  max-width: 860px;
+  padding: 32px 20px 64px;
+}
+
+.hero {
+  padding: 52px 4px 38px;
+}
+
+.eyebrow {
+  margin-bottom: 18px;
+  color: #666662;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+h1 {
+  margin: 0 0 22px;
+  font-size: clamp(58px, 14vw, 94px);
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.065em;
+}
+
+.tagline {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(25px, 6vw, 38px);
+  font-weight: 450;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.intro {
+  max-width: 650px;
+  margin-top: 22px;
+  color: #5f5f5a;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.card {
+  padding: 30px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: none;
+}
+
+.card h2 {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+label {
+  margin-top: 21px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 14px 15px;
+  border: 1px solid rgba(17, 17, 17, 0.13);
+  border-radius: 14px;
+  background: #f8f8f6;
+  color: #111111;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #111111;
+  outline: none;
+}
+
+button {
+  min-height: 48px;
+  padding: 13px 21px;
+  border-radius: 999px;
+  background: #111111;
+  font-weight: 600;
+}
+
+.sample-button {
+  min-height: 48px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #ecece8;
+  color: #111111;
+}
+
+.sample-button:hover {
+  background: #e4e4df;
+}
+
+button.secondary {
+  background: #ecece8;
+  color: #111111;
+}
+
+.output {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.output h3 {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.output h3:first-child {
+  margin-top: 8px;
+}
+
+.output p {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.output li {
+  margin-bottom: 9px;
+  padding-left: 3px;
+}
+
+.output ul,
+.output ol {
+  padding-left: 24px;
+}
+
+.note {
+  max-width: 700px;
+  margin: 28px auto 0;
+  color: #686863;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 20px 14px 48px;
+  }
+
+  .hero {
+    padding: 40px 4px 30px;
+  }
+
+  .card {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .tagline {
+    font-size: 28px;
+  }
+
+  .output-header {
+    display: block;
+  }
+
+  button.secondary {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
