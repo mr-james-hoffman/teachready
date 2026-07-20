@@ -42,6 +42,18 @@ function isEquivalentFractionsLesson(details) {
     searchText.includes("equivalent fraction")
   );
 }
+function isFirstFleetHistoryLesson(details) {
+  const searchText =
+    `${details.subject} ${details.goal} ${details.context}`.toLowerCase();
+
+  return (
+    searchText.includes("history") &&
+    (
+      searchText.includes("first fleet") ||
+      searchText.includes("1788")
+    )
+  );
+}
 
 function buildEquivalentFractionsLesson(details) {
   return `
@@ -219,6 +231,258 @@ function buildEquivalentFractionsLesson(details) {
   `;
 }
 
+function buildFirstFleetHistoryLesson(details) {
+  return `
+    <h3>Lesson snapshot</h3>
+    <p>
+      A ${details.length} ${details.year} History lesson exploring why the
+      First Fleet travelled to Australia and how the arrival of the British
+      was experienced and understood from different perspectives.
+    </p>
+
+    <h3>Historical inquiry question</h3>
+    <p>
+      Why did the First Fleet travel to Australia, and why might people have
+      experienced its arrival differently?
+    </p>
+
+    <h3>Learning goal</h3>
+    <p>${details.goal}</p>
+
+    <h3>Success criteria</h3>
+    <ul>
+      <li>I can explain at least two causes of the First Fleet's journey.</li>
+      <li>I can distinguish between a cause and a consequence.</li>
+      <li>I can compare perspectives using evidence from historical sources.</li>
+      <li>I can identify whose voice is represented and whose voice may be missing.</li>
+    </ul>
+
+    <h3>Historical concepts</h3>
+    <ul>
+      <li><strong>Cause and effect:</strong> why events happened and what followed.</li>
+      <li><strong>Perspectives:</strong> how people experienced and understood events differently.</li>
+      <li><strong>Evidence:</strong> what historical sources can tell us.</li>
+    </ul>
+
+    <h3>Explicit teaching sequence</h3>
+    <ol>
+      <li>
+        <strong>Source provocation, 5 minutes:</strong>
+        Display two contrasting sources or images connected to the arrival of
+        the First Fleet. Ask students what each source suggests and whose
+        perspective it may represent.
+      </li>
+
+      <li>
+        <strong>Establish the journey, 8 minutes:</strong>
+        Use ${details.resources} to locate Britain and Australia and trace the
+        First Fleet's route. Clarify that the voyage began in 1787 and arrived
+        in 1788.
+      </li>
+
+      <li>
+        <strong>Model cause and consequence, 10 minutes:</strong>
+        Explain that British authorities needed another destination for
+        transported convicts after losing access to their former North American
+        colonies. Establishing a British settlement also served imperial and
+        strategic interests.
+      </li>
+
+      <li>
+        <strong>Think aloud:</strong>
+        Model how to classify a statement as a cause or consequence using the
+        language “because” and “therefore”.
+      </li>
+
+      <li>
+        <strong>Compare perspectives, 12 minutes:</strong>
+        Examine short sources representing different experiences, such as a
+        British official, a convict and an Aboriginal perspective connected to
+        the relevant Country or community, where suitable sources are available.
+      </li>
+
+      <li>
+        <strong>Guided source analysis, 10 minutes:</strong>
+        Identify who created each source, why it was created, what it reveals
+        and what it cannot tell us.
+      </li>
+
+      <li>
+        <strong>Independent response, 10 minutes:</strong>
+        Students explain one cause of the voyage and compare two perspectives
+        using evidence.
+      </li>
+
+      <li>
+        <strong>Exit ticket, 5 minutes:</strong>
+        Students distinguish a cause from a consequence and identify one
+        limitation of a source.
+      </li>
+    </ol>
+
+    <h3>Teacher talk prompts</h3>
+    <ul>
+      <li>“Is this statement explaining why the event happened or what happened afterwards?”</li>
+      <li>“Who created this source?”</li>
+      <li>“Why might this source have been created?”</li>
+      <li>“What evidence supports your interpretation?”</li>
+      <li>“Whose perspective is represented here?”</li>
+      <li>“Whose voice is absent or difficult to hear?”</li>
+      <li>“Can two people experience the same event differently?”</li>
+      <li>“Can a source be useful while also being limited?”</li>
+    </ul>
+
+    <h3>Guided practice</h3>
+    <p>
+      Give students a set of statements to sort into causes and consequences.
+      Ask them to justify each decision using “because” or “therefore”.
+    </p>
+
+    <p><strong>Possible cause statements:</strong></p>
+
+    <ul>
+      <li>British prisons and prison hulks were overcrowded.</li>
+      <li>Britain needed another destination for transported convicts.</li>
+      <li>British authorities decided to establish a settlement at Botany Bay.</li>
+    </ul>
+
+    <p><strong>Possible consequence statements:</strong></p>
+
+    <ul>
+      <li>The First Fleet sailed from Britain in 1787.</li>
+      <li>A British colony was established in New South Wales.</li>
+      <li>Aboriginal peoples experienced dispossession, disruption and conflict.</li>
+    </ul>
+
+    <h3>Source analysis routine</h3>
+    <ol>
+      <li><strong>Origin:</strong> Who created the source and when?</li>
+      <li><strong>Purpose:</strong> Why was it created?</li>
+      <li><strong>Evidence:</strong> What does it reveal?</li>
+      <li><strong>Perspective:</strong> Whose experience does it represent?</li>
+      <li><strong>Limitation:</strong> What can it not tell us?</li>
+    </ol>
+
+    <h3>Checks for understanding</h3>
+    <ul>
+      <li>
+        <strong>Cause or consequence:</strong>
+        Read a statement aloud. Students display C for cause or E for effect
+        and explain their decision.
+      </li>
+
+      <li>
+        <strong>Hinge question:</strong>
+        Which statement best explains a cause of the First Fleet's voyage?
+        <ol>
+          <li>The ships arrived at Botany Bay.</li>
+          <li>Britain needed another place to transport convicts.</li>
+          <li>A colony was established in New South Wales.</li>
+          <li>The voyage lasted several months.</li>
+        </ol>
+      </li>
+
+      <li>
+        <strong>Source check:</strong>
+        Ask students to identify who created a source and one reason its account
+        may differ from another source.
+      </li>
+
+      <li>
+        <strong>Perspective check:</strong>
+        Ask students to write one sentence explaining why a British official,
+        a convict and an Aboriginal person may have experienced the arrival
+        differently.
+      </li>
+    </ul>
+
+    <h3>Likely misconceptions</h3>
+    <p>
+      The identified challenge is: ${details.context}
+    </p>
+
+    <p>Look specifically for students who:</p>
+
+    <ul>
+      <li>treat causes and consequences as interchangeable</li>
+      <li>believe history contains only one complete and correct account</li>
+      <li>assume all British colonists shared the same experience</li>
+      <li>refer to Aboriginal peoples as though they were one homogenous group</li>
+      <li>assume that a written British source represents everyone's perspective</li>
+      <li>describe British settlement as welcomed by everyone</li>
+    </ul>
+
+    <h3>Responsive teaching moves</h3>
+    <ul>
+      <li>
+        If students confuse causes and consequences, construct a simple
+        “because–event–therefore” timeline together.
+      </li>
+
+      <li>
+        If students believe history has one story, place two contrasting
+        sources side by side and ask what each includes, emphasises or omits.
+      </li>
+
+      <li>
+        If students assume everyone welcomed settlement, return to evidence
+        showing different experiences and interests.
+      </li>
+
+      <li>
+        If students generalise about Aboriginal peoples, identify the relevant
+        Country, community or language group represented by the source and
+        explain that experiences differed across peoples and places.
+      </li>
+
+      <li>
+        If students treat a source as unquestionably true, ask who created it,
+        for what audience and for what purpose.
+      </li>
+
+      <li>
+        If a source does not allow a confident conclusion, model the language:
+        “This source suggests … but it cannot tell us …”
+      </li>
+    </ul>
+
+    <h3>Support</h3>
+    <ul>
+      <li>Provide a map with the voyage route already marked.</li>
+      <li>Use colour-coded cards for causes and consequences.</li>
+      <li>Provide short source excerpts with key information highlighted.</li>
+      <li>Use the sentence stem: “This source represents the perspective of…”</li>
+      <li>Use the sentence stem: “The accounts differ because…”</li>
+    </ul>
+
+    <h3>Extension</h3>
+    <ul>
+      <li>Rank the causes of the voyage from most to least significant.</li>
+      <li>Compare two sources and decide which is more useful for a particular inquiry.</li>
+      <li>Explain how a source can be reliable for one question but limited for another.</li>
+      <li>Identify an important perspective that is absent from the available sources.</li>
+    </ul>
+
+    <h3>Independent response</h3>
+    <p>
+      Explain one important cause of the First Fleet's journey. Then compare
+      how two people or groups may have experienced the arrival differently.
+      Use evidence from at least two sources.
+    </p>
+
+    <h3>Exit ticket</h3>
+    <ol>
+      <li>
+        Is the following a cause or a consequence: “Britain needed another
+        destination for transported convicts”? Explain your answer.
+      </li>
+      <li>
+        Choose one source from today's lesson. Whose perspective does it
+        represent, and what is one thing it cannot tell us?
+      </li>
+    </ol>
+  `;
+}
 function buildGeneralLesson(details) {
   return `
     <h3>Lesson snapshot</h3>
@@ -308,10 +572,12 @@ function generateLesson() {
   const details = getLessonDetails();
 
   if (isEquivalentFractionsLesson(details)) {
-    output.innerHTML = buildEquivalentFractionsLesson(details);
-  } else {
-    output.innerHTML = buildGeneralLesson(details);
-  }
+  output.innerHTML = buildEquivalentFractionsLesson(details);
+} else if (isFirstFleetHistoryLesson(details)) {
+  output.innerHTML = buildFirstFleetHistoryLesson(details);
+} else {
+  output.innerHTML = buildGeneralLesson(details);
+}
 
   output.scrollIntoView({
     behavior: "smooth",
