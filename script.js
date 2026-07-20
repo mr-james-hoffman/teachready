@@ -1,4 +1,5 @@
 const generateBtn = document.getElementById("generateBtn");
+const sampleBtn = document.getElementById("sampleBtn");
 const copyBtn = document.getElementById("copyBtn");
 const output = document.getElementById("output");
 
@@ -88,5 +89,21 @@ async function copyLesson() {
   }, 1500);
 }
 
+function loadSampleLesson() {
+  document.getElementById("year").value = "Year 4";
+  document.getElementById("subject").value = "Mathematics";
+  document.getElementById("goal").value =
+    "Students recognise and generate equivalent fractions.";
+  document.getElementById("length").value = "35 minutes";
+  document.getElementById("prior").value =
+    "Students know halves, quarters and eighths.";
+  document.getElementById("context").value =
+    "Some students think a larger denominator means a larger fraction.";
+  document.getElementById("resources").value =
+    "Mini whiteboards, fraction strips and student notebooks.";
+
+  generateLesson();
+}
 generateBtn.addEventListener("click", generateLesson);
 copyBtn.addEventListener("click", copyLesson);
+sampleBtn.addEventListener("click", loadSampleLesson);
